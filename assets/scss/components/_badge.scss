@@ -1,0 +1,23 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.badge {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 12.21px;
+    background-color: $gray-300;
+    padding: 5px 10px;
+    color: $gray-000;
+    border-radius: 11px;
+    vertical-align: top;
+    display: inline-block;
+    transition: .3s ease;
+    cursor: default;
+    position: absolute;
+    top: 0;
+    right: -20%;
+
+    @include states {
+        background-color: $blue-500;
+    }
+}

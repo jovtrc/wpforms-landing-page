@@ -1,0 +1,11 @@
+.rating {
+    float: right;
+}
+
+.rating--five {
+    width: 80px;
+    height: 16px;
+    display: inline-block;
+    background-position: center;
+    background-image: url("../img/icons/star-solid.svg");
+}

@@ -1,0 +1,23 @@
+// Site helpers
+.container {
+    max-width: 980px;
+}
+
+.container--sm {
+    max-width: 650px;
+}
+
+.container,
+.container--sm {
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.text--center {
+    text-align: center;
+}
+
+// Default class for site sections
+.section {
+    padding: 50px 0;
+}

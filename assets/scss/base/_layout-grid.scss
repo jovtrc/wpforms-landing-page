@@ -1,0 +1,34 @@
+@use "sass:math";
+@use "../abstracts/mixins" as *;
+
+$layout-gap: 50px;
+
+.layout {
+  display: flex;
+  gap: $layout-gap;
+  flex-wrap: wrap;
+}
+
+@include mobile {
+  .order__mobile--1 {
+    order: 1;
+  }
+
+  .order__mobile--2 {
+    order: 2;
+  }
+}
+
+@include tablet {
+  @for $i from 1 through 12 {
+    .col__tablet--#{$i} {
+      width: calc(
+        math.div(100%, math.div(12, $i)) -
+          math.div(
+            calc(math.div(12, $i) * $layout-gap - $layout-gap),
+            math.div(12, $i)
+          )
+      );
+    }
+  }
+}

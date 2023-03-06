@@ -1,0 +1,30 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+#testimonials {
+    background: linear-gradient(180deg, $gray-100 0%, $gray-000 100%);
+    padding: 100px 0 50px;
+}
+
+.testimonial {
+    background-color: $gray-000;
+    border: 1px solid $gray-200;
+    border-radius: 6px;
+    padding: 30px;
+    font-size: 16px;
+    line-height: 24px;
+    
+    @include tablet {
+        margin-bottom: 60px;
+    }
+}
+
+.testimonial__content p {
+    margin: 0;
+}
+
+.testimonial__footer {
+    font-size: 1.4rem;
+    color: $gray-400;
+    margin-top: 15px;
+}

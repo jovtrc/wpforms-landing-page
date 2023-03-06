@@ -1,0 +1,24 @@
+// Fonts
+$main-font: 'Lato', sans-serif;
+$secondary-font: 'Arvo', serif;
+
+// Colors
+$gray-000: #FFFFFF;
+$gray-100: #F8F8F8;
+$gray-200: #DDDDDD;
+$gray-300: #BBBBBB;
+$gray-400: #AAAAAA;
+$gray-500: #777777;
+$gray-600: #444444;
+$gray-900: #000000;
+
+$blue-500: #036AAB;
+$blue-600: darken($blue-500, 5%);;
+
+$orange-500: #E27730;
+$orange-600: darken($orange-500, 5%);
+
+// Device screen sizes
+$mobile-screen: calc(48em - 1px); // 767px
+$tablet-screen: 48em; // 768px
+$desktop-screen: 85em; // 1360px

@@ -1,0 +1,30 @@
+@use '../abstracts/variables' as *;
+
+// All element states
+@mixin states() {
+    &:hover,
+    &:active,
+    &:focus,
+    &:focus-within {
+        @content;
+    }
+}
+
+// Media queries
+@mixin mobile() {
+    @media (max-width: $mobile-screen) {
+        @content;
+    }
+}
+
+@mixin tablet() {
+    @media (min-width: $tablet-screen) {
+        @content;
+    }
+}
+
+@mixin desktop() {
+    @media (min-width: $desktop-screen) {
+        @content;
+    }
+}

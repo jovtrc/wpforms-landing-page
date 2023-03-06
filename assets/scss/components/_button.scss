@@ -1,0 +1,45 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.button {
+    width: 100%;
+    background-color: $gray-000;
+    border: 1px solid $gray-200;
+    border-radius: 3px;
+    padding: 20px;
+    display: block;
+    text-decoration: none;
+    color: $gray-600;
+    transition: .3s ease;
+    line-height: 2.4rem;
+    text-align: center;
+    font-size: 2.0rem;
+
+    @include states {
+        color: $gray-600;
+        background-color: $gray-100;
+    }
+}
+
+.button--primary {
+    background-color: $orange-500;
+    color: $gray-000;
+    border-color: rgba($gray-000, 0.2);
+
+    @include states {
+        color: $gray-000;
+        background-color: $orange-600;
+    }
+}
+
+.button__layout {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 40px 0 50px;
+
+    @include tablet {
+        gap: 50px;
+        flex-wrap: nowrap;
+    }
+}
